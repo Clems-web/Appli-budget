@@ -48,3 +48,7 @@ btnCalcul.addEventListener("click", ()=> {
         divResult.innerHTML += "Bilan : neutre";
     }
 })
+
+btnReset.addEventListener("click", ()=> {
+    window.location.reload();
+})
