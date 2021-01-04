@@ -5,67 +5,35 @@
         <title>Bugdet-management</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="container">
-            <div class="cadre" id="outcome">
-                <label for="rent">Loyer</label>
-                <input type="text" class="input" id="rent">
+            <div id="containerOutcome">
+                <label for="nom">Dépenses</label>
+                <input type="text" id="nom" placeholder="Exemple : facture EDF">
 
-                <label for="charges">Charges</label>
-                <input type="text" class="input" id="charges">
+                <label for="number">Montant</label>
+                <input type="number" id="number">
 
-                <label for="banksDebt">Crédits</label>
-                <input type="text" class="input" id="banksDebt">
-
-                <label for="waterElectricityGaz">Eau/electricité/gaz</label>
-                <input type="text" class="input" id="waterElectricityGaz">
-
-                <label for="phoneInternet">Telephone + internet</label>
-                <input type="text" class="input" id="phoneInternet">
-
-                <label for="houseInsurance">Assurance Maison</label>
-                <input type="text" class="input" id="houseInsurance">
-
-                <label for="homeInsurance">Assurance Habitation</label>
-                <input type="text" class="input" id="homeInsurance">
-
-                <label for="healthMutual">Mutuelle santé</label>
-                <input type="text" class="input" id="healthMutual">
-
-                <label for="childcare">Frais de garde d'enfant</label>
-                <input type="text" class="input" id="childcare">
-
-                <label for="salaryTaxe">Impôt sur le revenu</label>
-                <input type="text" class="input" id="salaryTaxe">
-
-                <label for="localTaxe">Impôt Locaux</label>
-                <input type="text" class="input" id="localTaxe">
-
-                <label for="food">Bouffe pour le mois</label>
-                <input type="text" class="input" id="food">
-
-                <label for="sportCultural">Sport/Culturel</label>
-                <input type="text" class="input" id="sportCultural">
-
-                <label for="other">Autres</label>
-                <input type="text" class="input" id="other">
+                <button type="button" id="btnAdd">Ajouter</button>
             </div>
-            <div class="cadre" id="income">
-                <label for="salary">Salaire</label>
-                <input type="text" class="input" id="salary">
+            <div id="containerIncome">
+                <label for="rent">Rentes</label>
+                <input type="text" id="rent" placeholder="Exemple : Salaire">
 
-                <label for="allowance">Aides</label>
-                <input type="text" class="input" id="allowance">
+                <label for="numberRent">Montant</label>
+                <input type="number" id="numberRent">
 
-                <label for="rents">Rentes immobilières</label>
-                <input type="text" class="input" id="rents">
-
-                <label for="others">Autres</label>
-                <input type="text" class="input" id="others">
+                <button type="button" id="btnAddRent">Ajouter</button>
             </div>
-            <div class="cadre" id="saving"></div>
-            <div class="cadre" id="result"></div>
+            <div id="divCalcul">
+                <button type="button" id="btnCalcul">Calculer</button>
+            </div>
+            <div id="memo">Récapitulatif : </div>
+            <div id="memoRent">Récapitulatif : </div>
+            <div id="result"></div>
+            <div id="imgStonk"></div>
         </div>
         <script src="app.js"></script>
     </body>
